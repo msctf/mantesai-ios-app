@@ -106,7 +106,7 @@ static let backendBaseURL = URL(string: "http://<your-ip-or-domain>:3000")!
 ### Auth
 **POST** `/auth/signup`
 ```json
-{ "email":"a@b.c", "password":"******", "name":"Juan" }
+{ "email":"a@b.c", "password":"******", "name":"dapa" }
 ```
 Response
 ```json
@@ -134,7 +134,7 @@ Response
 **POST** `/api/v2/chat/:model/aimodels` (Bearer)
 ```json
 {
-  "username": "juan",
+  "username": "dapa",
   "chat_id": "c_abc123",        // optional (if missing, server creates one)
   "message": { "content": [
     { "type":"text", "text":"hello" }
@@ -159,7 +159,7 @@ Response
 **GET** `/api/v2/chat/:chatId/:username/history?limit=100&order=asc` (Bearer)
 ```json
 {
-  "chat": { "id":"c_abc123", "username":"juan", "title":"hello", "...":"..." },
+  "chat": { "id":"c_abc123", "username":"dapa", "title":"hello", "...":"..." },
   "data": [
     { "role":"user", "content":[{ "type":"text","text":"hello" }], "created_at":"..." },
     { "role":"assistant", "content":[{ "type":"text","text":"You said: hello" }], "created_at":"..." }
